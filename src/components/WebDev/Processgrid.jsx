@@ -1,5 +1,5 @@
 import React from 'react';
-import './ProcessGrid.css';
+import './Processgrid.css';
 
 const processItems = [
   {
