@@ -1,0 +1,197 @@
+/* Container for the SEO Banner */
+.seo-banner-container {
+  max-width: 1140px;
+  width: 100%;
+  margin: auto;
+}
+
+.seo-banner-image {
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* Main SEO Section */
+.seo-main-section {
+  background-color: #000;
+  color: #e5e7eb;
+  padding: 80px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.seo-services-panel {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.seo-text-content {
+  flex: 1;
+}
+
+.seo-heading {
+  font-size: 36px;
+  color: #38bdf8;
+  font-weight: 800;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.seo-heading-underline {
+  width: 80px;
+  height: 5px;
+  background-color: #f97316;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.seo-paragraph {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* Right Panel Services */
+.seo-services-box {
+  min-width: 300px;
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 30px 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.seo-services-title {
+  color: #f97316;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.seo-services-list {
+  list-style: none;
+  padding: 0;
+  font-size: 16px;
+  line-height: 2;
+  margin: 0;
+}
+
+.seo-service-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  padding: 10px;
+  transition: all 0.3s;
+}
+
+.seo-service-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f97316;
+  color: #fff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 12px;
+}
+
+.seo-service-text {
+  color: #f1f5f9;
+}
+
+/* Services Section */
+.services-section {
+  background-color: #000;
+  color: #fff;
+}
+
+.section-title {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 0px;
+  font-size: 28px;
+}
+
+.services-grid {
+  padding-top: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.service-card {
+  background-color: #1e293b;
+  padding: 25px;
+  border-radius: 12px;
+  color: #cbd5e1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+ box-shadow: 0 2px 8px #0000001a;
+  
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+
+.card-header img {
+  width: 40px;
+  height: 40px;
+}
+
+.card-header h3 {
+  font-size: 20px;
+  color: #38bdf8;
+}
+
+.cta-button-container {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #007aff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #007aff;
+}
+
+@media (max-width: 768px) {
+  .seo-services-panel{
+    flex-direction:column;
+  }
+  .services-section {
+   margin:0px;
+   padding:0px;
+  }
+  .service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 2px 8px #0000001a;
+  
+}
+}

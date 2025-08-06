@@ -1,0 +1,120 @@
+.table-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 40px auto;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.table-wrapper h2 {
+  background-color: #1163FB;
+  color: #fff;
+  border-radius: 12px 12px 0px 0px;
+  padding: 12px;
+  font-size: 16px;
+  margin: 0;
+}
+
+.table-wrapper h2 span {
+  font-size: 14px;
+  font-weight: normal;
+  display: block;
+}
+
+.table-wrapper p {
+  background-color: #272727;
+  color: #fff;
+  margin: 0;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.table-border {
+  border: 1px solid #1163fb;
+  border-radius: 12px;
+}
+
+.ranking-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #272727;
+}
+
+.ranking-table th,
+.ranking-table td {
+  border: 1px solid #fff;
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #272727;
+  text-align: center;
+}
+
+/* Style for thead */
+.ranking-table thead tr:first-child {
+  background-color: #1163fb;
+  color: white;
+}
+
+.ranking-table thead tr.sub-head {
+  background-color: #fff;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Zebra striping for table rows */
+.ranking-table tbody tr:nth-child(even) {
+  background-color: #fff7f0;
+  color: #000;
+}
+
+/* Make the ID (S. No) column narrower */
+.ranking-table th:first-child,
+.ranking-table td:first-child {
+  width: 40px;
+  min-width: 50px;
+  max-width: 50px;
+  text-align: center;
+}
+.ranking-table th:nth-child(2),
+.ranking-table td:nth-child(2) {
+  width: 50%;
+  text-align: left;
+  padding-left: 15px;
+}
+.ranking-table th:nth-child(3),
+.ranking-table td:nth-child(3),
+.ranking-table th:nth-child(4),
+.ranking-table td:nth-child(4) {
+  width: 80px;
+  max-width: 80px;
+  min-width: 60px;
+  text-align: center;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .table-wrapper h2 {
+    font-size: 12px;
+  }
+
+  .table-border {
+    border: none;
+    padding: 0px 10px;
+  }
+
+  .ranking-table td,
+  .ranking-table th {
+    font-size: 8px !important;
+    padding: 6px 4px;
+  }
+
+  .ranking-table th:first-child,
+  .ranking-table td:first-child {
+    width: 30px;
+    min-width: 30px;
+    max-width: 30px;
+  }
+}

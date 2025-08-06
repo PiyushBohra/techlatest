@@ -1,0 +1,214 @@
+.vape-hero-seo {
+  padding: 20px 30px;
+  
+}
+
+.vape-hero-seo h2{
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.vape-hero-seo p {
+  font-size: 1.1rem;
+  color: #fff;
+  max-width: 1200px;
+  margin: 0 auto 10px auto;
+  line-height: 1.6;
+}
+
+.vape-seo-section {
+  padding: 20px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+.vape-seo-section-5{
+   display:flex;
+   padding: 20px 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid #fff;
+}
+.vape-seo-section-5 h2{
+   color: #fff;
+  font-size: 25px;
+  margin-bottom: 16px;
+  border-left: 6px solid #377DFF;
+  padding-left: 12px;
+}
+.vape-seo-section-5 img{
+  padding:100px 50px;
+}
+
+
+.vape-seo-section:last-of-type {
+  border-bottom: none;
+}
+
+.vape-seo-section h2 {
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 16px;
+  border-left: 6px solid #377DFF;
+  padding-left: 12px;
+}
+
+.vape-seo-section p {
+  font-size: 1.05rem;
+  color: #fff;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+.vape-seo-section-last h2{
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 16px;
+  border-left: 6px solid #377DFF;
+  padding-left: 12px;
+}
+
+.vape-seo-section-last{
+   padding: 20px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+
+}
+ul,
+ol {
+  margin-left: 20px;
+  padding-left: 20px;
+  font-size: 1.05rem;
+  color: #fff;
+}
+
+ul li,
+ol li {
+  margin-bottom: 8px;
+}
+
+ul li::marker,
+ol li::marker {
+  color:#377DFF;
+}
+
+@media (max-width: 768px) {
+  .vape-hero-seo h1 {
+    font-size: 2.25rem;
+  }
+  .vape-seo-section h2 {
+    font-size: 1.5rem;
+  }
+  .vape-seo-section {
+    padding: 30px 20px;
+  }
+}
+
+.heading-faqs{
+  padding: 20px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.heading-faqs h3{
+  color:#fff;
+  border:none;
+  font-size:35px;
+}
+
+ .accordion {
+  max-width: 1200px;
+  margin: 2rem auto;
+  
+}
+
+.accordion-item {
+  border-bottom: 1px solid #007aff;
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  color:#fff;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+p{
+  color:#fff;
+}
+
+.accordion-icon {
+  font-size: 1.5rem;
+  color:#377DFF;
+}
+
+.accordion-body {
+  padding: 0 1rem 1rem;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.accordion-item.active .accordion-header {
+  background-color: #000;
+  color:#fff;
+}
+
+
+/*  */
+.seo-section {
+  margin-top:30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap; 
+}
+
+.image-column img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  width: 400px;
+}
+
+.content-column {
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .seo-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-column img {
+    width: 100%;
+  }
+
+  .content-column {
+    padding-top: 20px;
+  }
+}
+
+.customize-heading{
+  font-size:29px !important;
+}
+
+

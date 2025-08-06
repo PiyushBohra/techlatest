@@ -1,0 +1,89 @@
+.outsourcing-container {
+  position: relative;
+  background-color: #000;
+  min-height: 100vh;
+}
+
+.outsourcing-banner {
+  width: 100%;
+  height: 400px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.outsourcing-content {
+  position: absolute;
+  top: 50px; 
+  right: 0;
+  width: 40%;
+  background-color: #007bff;
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 30px 0px 0px 30px;
+  z-index: 2;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.outsourcing-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.outsourcing-paragraph {
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.outsourcing-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  column-count: 2;
+}
+
+.outsourcing-list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.check-icon {
+  margin-right: 10px;
+  color: #fff;
+  font-size: 16px;
+}
+
+
+ @media (max-width: 768px) {
+  .outsourcing-content {
+    position: static;
+    width: 90%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .outsourcing-list {
+    column-count: 1;
+  }
+
+  .outsourcing-heading {
+    font-size: 20px;
+  }
+
+  .outsourcing-paragraph,
+  .outsourcing-list-item {
+    font-size: 13px;
+  }
+  .outsourcing-banner{
+    background-position: left;
+  }
+}

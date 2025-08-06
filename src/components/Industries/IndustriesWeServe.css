@@ -1,0 +1,136 @@
+.industries-section {
+    display: flex;
+    justify-content:center;
+    padding: 60px 20px;
+    background-color: #000;
+    color: white;
+    flex-wrap: wrap;
+  }
+  
+  .industries-content {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .subtitle {
+    font-size: 17px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .industries-content h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+  }
+  
+  .industry-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .industry-list li {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .industry-list li span {
+    color: #fff;
+  }
+  
+  .industry-list li.active span {
+    color: #00aaff;
+  }
+  
+  .industry-list li p {
+    font-size: 14px;
+    color: #fff;
+    margin-top: 10px;
+    max-width: 400px;
+  }
+  
+  .industries-image-wrapper {
+    position: relative;
+    flex: 1;
+    max-width: 450px;
+    margin-top: 20px;
+  }
+  
+  .industries-image-wrapper img {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+  }
+  
+  .experience-badge {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background-color: #000;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  .experience-badge .number {
+    font-size: 40px;
+    color: #007bff;
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+  .industries-section {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 15px;
+  
+  }
+  .industries-image-wrapper img {
+    display: none;
+  }
+
+  .industries-content {
+    max-width: 100%;
+  }
+
+  .industries-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .industry-list li {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .industry-list li p {
+    font-size: 11px;
+    max-width: 100%;
+    margin-top: 8px;
+  }
+
+  .industries-image-wrapper {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .experience-badge {
+    bottom: -10px;
+    left: 10px;
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .experience-badge .number {
+    font-size: 30px;
+  }
+}

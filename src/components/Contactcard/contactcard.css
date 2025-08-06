@@ -1,0 +1,115 @@
+.contact-card {
+  display: flex;
+  max-width: 900px;
+  margin: 50px auto;
+  border-radius: 40px;
+  overflow: hidden;
+  
+  background: #1163FB;
+  flex-wrap: wrap;
+}
+
+.left-panel {
+  background-color: #1163FB;
+  color: white;
+  padding: 40px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.left-panel h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.left-panel h2 span {
+  color: white;
+}
+
+.left-panel p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.left-panel form input,
+.left-panel form textarea {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px 5px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.left-panel form textarea {
+  resize: vertical;
+  height: 80px;
+}
+
+.left-panel form input::placeholder,
+.left-panel form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: "Inter", sans-serif ;
+}
+
+.left-panel form button {
+  background: white;
+  color: #1163FB;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.left-panel form button:hover {
+  background: #f2f2f2;
+}
+
+.right-panel-1 {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #1163FB;
+  color: white;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.right-panel-1 > * {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-text {
+  font-size: 14px;
+  color: #ddd;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+
+
+@media (max-width: 768px) {
+  .contact-card {
+    flex-direction: column;
+  }
+
+  .left-panel,
+  .right-panel-1 {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .right-panel-1 {
+    order: -1; 
+  }
+}

@@ -1,0 +1,171 @@
+.tab-section-container {
+  background-color: #0D0D0D;
+  color: #fff;
+  font-family: sans-serif;
+  padding: 40px;
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.tab-section-title {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tab-section-subtitle {
+  font-size: 12px;
+  margin-top: 10px;
+  color: #bbb;
+  line-height: 1.6;
+}
+
+.tab-wrapper {
+  display: flex;
+  margin-top: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  flex-direction: row;
+}
+
+.tab-sidebar {
+  width: 40%;
+  background-color: #1D4ED8;
+  padding: 20px;
+}
+
+.tab-item {
+  padding: 22px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.tab-item.active {
+  background-color: #3B82F6;
+}
+
+.tab-content {
+  width: 60%;
+  background-color: #111827;
+  padding: 40px;
+}
+
+.tab-header {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.tab-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #3B82F6;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-icon span {
+  font-size: 24px;
+}
+
+.tab-heading {
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.tab-description {
+  font-size: 15px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ===== Responsive Styles ===== */
+
+@media screen and (max-width: 768px) {
+  .tab-wrapper {
+    flex-direction: column;
+  }
+
+  .tab-sidebar,
+  .tab-content {
+    width: 100%;
+  }
+
+  .tab-section-container {
+    width:auto;
+    padding: 30px 20px;
+  }
+
+  .tab-section-title {
+    font-size: 24px;
+  }
+
+  .tab-section-subtitle {
+    font-size: 13px;
+  }
+
+  .tab-content {
+    padding: 30px 20px;
+  }
+
+  .tab-item {
+    font-size: 15px;
+    padding: 18px 16px;
+  }
+
+  .tab-heading {
+    font-size: 22px;
+  }
+
+  .tab-description {
+    font-size: 14px;
+  }
+
+  .tab-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tab-icon span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tab-section-title {
+    font-size: 20px;
+  }
+
+  .tab-section-subtitle {
+    font-size: 12px;
+  }
+
+  .tab-item {
+    font-size: 14px;
+    padding: 14px;
+  }
+
+  .tab-heading {
+    font-size: 18px;
+  }
+
+  .tab-description {
+    font-size: 13px;
+  }
+
+  .tab-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .tab-icon span {
+    font-size: 18px;
+  }
+}

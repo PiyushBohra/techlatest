@@ -1,0 +1,210 @@
+.hero-section-2 {
+  background: url('./images/hero-2.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 40px;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  min-height: 280px;
+  animation: moveBackground 10s linear infinite;
+}
+
+
+.hero-content {
+  max-width: 50%;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.hero-content p {
+  font-size: 1.1rem;
+  margin-bottom: 24px;
+  color: #dcdcdc;
+}
+
+.cta-button-1 {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+  text-decoration:none;
+}
+
+.cta-button-1:hover {
+  background: #005ed9;
+}
+
+.chat-profiles {
+  position: relative;
+  width: 50%;
+  height: 100%;
+}
+
+.profile {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 10px;
+  color: white;
+  gap: 10px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.profile .label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.85rem;
+}
+
+.profile.small {
+  padding: 0;
+  background: none;
+}
+
+.profile.small img {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .chat-profiles {
+    display: none;
+  }
+  .hero-content h1{
+    font-size:32px;
+  }
+  
+}
+
+
+.why-outsource-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  gap: 8rem;
+}
+
+.why-outsource-left {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.why-outsource-left h2 {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+
+.why-outsource-left p {
+  font-size: 0.95rem;
+  color: #aaa;
+  line-height: 1.6;
+}
+
+.why-outsource-right {
+  flex: 2;
+  min-width: 300px;
+}
+
+.timeline {
+  position: relative;
+  border-left: 2px solid #333;
+  padding-left: 30px;
+  padding-top:40px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 30px;
+}
+
+.timeline-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border:3px solid #0f5ae4;
+  border-radius: 50%;
+  position: absolute;
+  left: -39px;
+  top: 6px;
+}
+
+.timeline-icon {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.timeline-content h3 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #fff;
+}
+.timeline-content img{
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  font-size: 0.9rem;
+  color: #ccc;
+  margin-top: 5px;
+}
+.hero-image-wrapper-1 {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.animated-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: floatUpDown 3s ease-in-out infinite;
+}
+
+@keyframes floatUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform:translateY(-25px) scale(1.05);
+  }
+}

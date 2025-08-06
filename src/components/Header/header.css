@@ -1,0 +1,403 @@
+body {
+  margin: 0;
+  background-color: #000;
+}
+
+.site-header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  position: relative;
+  z-index: 1000;
+  background-color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.logo-text h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #004080;
+  line-height: 1.1;
+}
+
+.logo-text p {
+  margin: 0;
+  font-size: 12px;
+  color: #666;
+  letter-spacing: 1px;
+}
+
+.navigation ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.cta-button-header {
+  background-color: #1163FB;
+  color: #fff;
+  padding: 13px 47px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button-header:hover {
+  background-color: #1163FB;
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding:0px;
+  }
+
+  .site-header {
+    background-color: transparent;
+    box-shadow: none;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    z-index: 1001;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 1000;
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .navigation.nav-open {
+    display: block;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+    background: transparent;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .cta-button-header {
+    display: none;
+  }
+
+  /* Disable dropdown hover in mobile */
+  .navigation li:hover .dropdown-menu {
+    display: none;
+  }
+
+  /* Always show dropdown menus inside expanded nav on mobile */
+  .navigation .dropdown-menu {
+    position: static;
+    display: block;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding-left: 15px;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 0;
+  }
+
+  /* TABLE RESPONSIVE ADJUSTMENTS */
+  table {
+    font-size: 12px !important;
+  }
+
+  th, td {
+    padding: 6px 8px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text h1 {
+    font-size: 16px;
+  }
+
+  .logo-text p {
+    font-size: 10px;
+  }
+
+  .navigation a {
+    font-size: 14px;
+  }
+
+  .cta-button-header {
+    padding: 12px 15px;
+    display: none;
+  }
+}
+
+/* Dropdown Base Styling */
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 25px;
+}
+
+.navigation ul li {
+  position: relative;
+}
+
+.navigation ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.navigation ul li a:hover {
+  color: #fff;
+}
+
+/* Dropdown Menu */
+.navigation .dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1e1e1e;
+  border: 1px solid #2b2b2b;
+  border-radius: 6px;
+  min-width: 250px;
+  z-index: 999;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* Show on Hover (Desktop) */
+.navigation li:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown Links */
+.dropdown-menu li a {
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #1163FB;
+  color: #ffffff;
+  border-radius: 4px;
+}
+
+.menu-item20 .dropdown-menu {
+  min-width: 300px;
+}
+
+/* Animation */
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+/* TABLE STYLES FOR RESPONSIVENESS */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* key for shrinking table */
+  font-size: 14px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #444;
+  color: #fff;
+  white-space: normal; /* allow wrapping */
+  word-break: break-word;
+  text-align: left;
+}
+
+.topbar-top{
+background:#ffffff;
+}
+/* ---------- Topbar Section ---------- */
+.topbar-section {
+  background: #eaf6fb;
+  padding: 6px 0;
+  font-size: 14px;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left:auto;
+  padding:5px 20px;
+}
+
+.topbar-content .social-icons {
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+}
+
+.topbar-content .contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar-content .contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.topbar-content .lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+
+.topbar-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Topbar Styling */
+.topbar-section {
+  background: #eaf6fb;
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.topbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 12px;
+}
+
+.social-icons svg {
+  color: #000;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-info div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #000;
+  font-weight: 500;
+}
+
+.lang {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #000;
+}
+.social-m{
+  text-decoration:none;
+  color:#000;
+}
+.social-m:hover{
+  color:#1063ff;
+}
+.social-icons-header a:hover i{
+  color:#1063ff!important;
+}
+
+.social-icons-header i{
+  color: #000 !important;
+  border:0px !important;
+  margin: 0 5px!important;
+}
+
+@media(max-width:767px)
+{
+.topbar-section .social-icons-header{
+  display:none;
+
+}
+.topbar-section .topbar-content a{
+  font-size:10px; 
+
+}
+.topbar-section svg{
+  font-size:10px;
+}
+}

@@ -1,0 +1,54 @@
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+ 
+.process-box {
+  background-color: #222;
+  padding: 10px 20px;
+  transition: background 0.3s, color 0.3s;
+  border-radius: 0px;
+}
+ 
+.process-box h3 {
+  margin-bottom: 8px;
+  font-size: 18px; /* Smaller font */
+  color: #ffffff;
+}
+ 
+.process-box p {
+  font-size: 14px; /* Smaller font */
+  line-height: 1.4;
+  color: #ffffff;
+}
+ 
+/* Gradient on hover */
+.process-box:hover,
+.process-box.active {
+  background: linear-gradient(135deg, #5b4dff, #00c9ff);
+  color: white;
+}
+ 
+.process-box:hover h3,
+.process-box.active h3,
+.process-box:hover p,
+.process-box.active p {
+  color: white;
+}
+ 
+/* Mobile: 320px and below = 1 box per row */
+@media (max-width: 767px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+ 
+  .process-box h3 {
+    font-size: 16px;
+  }
+ 
+  .process-box p,.industry-overlay p {
+    font-size: 10px!important;
+  }
+}
